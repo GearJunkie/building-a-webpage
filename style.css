@@ -1,3 +1,15 @@
-body {
-    background-color: darkgrey;
+header {
+    background-image: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: contain;
+    color: magenta;
 }
+
+a {
+    color: magenta;
+}
+
+body {
+    background-color: rgb(36, 31, 31);
+    color: limegreen;
+}
+/* example of CSS comment */

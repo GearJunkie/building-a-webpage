@@ -1,0 +1,78 @@
+<h2>What is HTML?</h2>
+            <p>HTML &lpar;Hypertext Markup Language&rpar; is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which can be applied to pieces of text to give them different meaning in a document &lpar;Is it a paragraph? Is it a bulleted list? Is it part of a table?&rpar;, structure a document &lpar;Does it have a header? Three colums of content? A navigation menu?&rpar;, and embed contenct such as images and video into a page. For example, consider the following line of text:</p>
+            <p>My cat is very grumpy</p>
+            <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph &lt;p&gt; element:</p>
+            <p>&lt;p&gt;My cat is very grumpy&lt;p&gt;</p>
+            <h3>Anatomy of an HTML element:</h3>
+            <p>Let's further explore our paragraph element from the previous section:</p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png">
+            <p>The anatomy of our element is:</p>
+            <ul>
+                <li>The opening tag: This consists of the name of the element, p for paragraph, wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. It precedes the start of the paragraph text.</li>
+                <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+                <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+            </ul>
+                </p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+            <h3>Nesting elements:</h3>
+            <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong&lpar;er&rpar; text formatting:
+            <p>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.</p>
+            <p>There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p</p>
+            <h3>Block versus inline elements:</h3>
+            <ul>
+                <li>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
+                <li>Inline elements are contained within block-level elements, and surround only small parts of the document’s content &lpar;not entire paragraphs or groupings of content&rpar;. An inline element will not cause a new line to appear in the document. It is typically used with text, for example an &lt;a&gt; element creates a hyperlink, and elements such as &lt;em&gt; or &lt;strong&gt; create emphasis.</li>
+            </ul>
+            <p>&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;</p>
+            <p>&lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;</p>
+            <p>&lt;em&gt; is an inline element. As you see below, the first three elements sit on the same line, with no space in between . On the other hand, &lt;p&gt; is a block-level element. Each p element appears on a new line, with space above and below.</p>
+            <p><em>firstsecondthird</em></p>
+            <p>fourth</p><p>fifth</p><p>sixth</p>
+            <h3>Empty elements:</h3>
+            <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert or embed something in the document. For example, the &lt;img&gt; element embeds an image file onto a page:</p>
+            <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;
+            <p>This would output the following:</p>
+            <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+            <h3>Attributes:</h3>
+            <p>Elements can also have attributes. Attributes look like this:</p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png">
+            <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
+            <p>An attribute should have:</p>
+            <ul>
+                <li>A space between it and the element name. &lpar;For an element with more than one attribute, the attributes should be separated by spaces too.&rpar;</li>
+                <li>The attribute name, followed by an equal sign.</li>
+                <li>An attribute value, wrapped with opening and closing quote marks.</li>
+            </ul>
+            <h3>Adding attributes to an element:</h3>
+            <p>Another example of an element is &lt;a&gt;. This stands for anchor. An anchor can make the text it encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
+            <ul>
+                <li>href: This attribute's value specifies the web address for the link &lpar;href="https://www.google.com/"&rpar;.</li>
+                <li>Title: The title attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, title="The Google Homepage". This appears as the tooltip when a cursor hovers over the element.</li>
+                <li>Target: The target attribute specifies the browsing context used to display the link. For example: target="_blank" will display the link in a new tab. If you want to display the linked content in the current tab, just omit this attribute.</li>
+            </ul>
+            <p>Live output:</p>
+            <p>A link to my <a href="https://www.google.com/" title="The Google Homepage" target="_blank">favorite website</a>.</p>
+            <p>Editable code:</p>
+            <p>&lt;p&gt;A link to my &lt;a href="https://www.google.com/" title="The Google Homepage" target=_blank"&gt;favorite website&lt;/a&gt;.&lt;/p&gt;</p>
+            <h3>Anatomy of an HTML document:</h3>
+            <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+            <p>&lt;!DOCTYPE html&gt;</p><p>&lt;html&gt;</p><p>&lt;head&gt;</p><p>&lt;meta charset="utf-8"&gt;</p><p>&lt;title&gt;My test page&lt;/p&gt;</p><p>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>&lt;p&gt;This is my page&lt;/p&gt;</p><p>&lt;/body&gt;</p><p>&lt;/html&gt;</p>
+            <p>Here we have:</p>
+            <ul>
+                <li>The doctype: The doctype is a historical artifact that NEEDS to be included for everything else to work right. That is all you need to know!</li>
+                <li>The &lt;html&gt; element: This element wraps all the content on the page. It is sometimes known as the root element.</li>
+                <li>The &lt;head&gt; element: This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, characer set declarations, and more.</li>
+                <li>The &lt;meta charset="utf-8"&gt;: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li>
+                <li>&lt;title&gt;: This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+                <li>&lt;body&gt;: This contains all the content that displays on the page, including text, images, video, games, playable audio tracks, or whatever else.</li>
+            </ul>
+            <h3>Entity references; Including special character in HTML:</h3>
+            <p>in HTML, the characters &lt;, &gt;, &quot;, and &amp; are special characters. They are parts of the HTML syntax itself. So we need to use character references, special codes that represent characters, to be used in these exact circumstances. each character reference starts with an ampersand &lpar;&&rpar;, and ends with a semicolon &lpar;;&rpar;.</p>
+            <img src="https://devpractical.com/public/04/special-characters-html.png">
+            <p>Example code: &lt;p&gt;In HTML, you define a paragraph using the &amp;lt;p&amp;gt; element.&lt;/p&gt;</p>
+            <p>Live output: In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+            <p>There are many other entity referenes to use in HTML.</p>
+            <h3>HTML comments:</h3>
+            <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates. To write an HTML comment, wrap it in the special markers &lt;!-- and --&gt;.</p>
+            <p>Example: <p>&lt;p&gt;This is not inside a comment&lt;/p&gt;</p><p>&lt;!-- &lt;p&gt;But this is!&lt;/p&gt; --&gt;</p>
+            <!-- This is an HTML Comment-->
+        </section>

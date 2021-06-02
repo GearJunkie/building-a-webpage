@@ -1,28 +1,79 @@
+body {
+    background-color: #ffffff; 
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+
 header {
-    background-image: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    background-size: contain;
-    color: magenta;
-    text-align: center;
-    font-size: x-large;
+    display: block;
+    background-color: white;
+    margin-top: 20px;
 }
 
-header li {
-    background-color: transparent;
-    display: inline;
-    font-size: larger;
-    text-align: center;
-    padding: 10px;
-}
 
 a {
-    color: magenta;
-    background-color: transparent;
-    text-align: center;
-    text-decoration-line: none;
+    color: white; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    background: #0026e4
+    padding: 5px 5px; 
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+ }
+        
+
+.navigation li:hover { 
+    background: rgb(0, 0, 0);
 }
 
-body {
-    background-color: rgb(36, 31, 31);
-    color: rgb(70, 182, 70);
+
+
+.tab-bar { 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0px
+    background-color: rgb(86, 31, 153);
 }
-/* example of CSS comment */
+
+    
+
+.navigation ul { 
+    border: 1px solid, #0026e4; 
+    list-style: none;   
+    display: flex;
+    justify-self: center;
+    background-color: #0026e4;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation li {
+    flex: 3;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logobar {
+    display: block;
+    padding: 0px 5px 5px 5px;
+    columns: 2;
+    justify-self: center;
+    align-content: center;
+}
+
+.logobar div {
+    display: block;
+    padding: 5px;
+    align-self: left;
+}
+
+#sitelogo {
+    display: block;
+    max-width: 55%;
+    margin: 22px 0px 0px 0px;
+    margin-inline-start: 150px;
+    align-self: left;
+}

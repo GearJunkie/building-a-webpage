@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Intro to Software Development</title>
-    <link rel="stylesheet" href="/HTML-Page/style.css" type="text/css">
+    <link rel="stylesheet" href="javascript.css" type="text/css">
     <script src="HTML-Page/app.js"></script>
   </head>
   <body>
@@ -33,8 +33,10 @@
       </main>
       <footer>
           <ul>
-              <li><a>Source Credit</a></li>
-              <li><a>Put Something Else Here</a></li>
+              <li><a>What is Javscript?</a></li>
+              <li><a>Javscript Expressions and Operators</a></li>
+              <li><a>Javascript Functions</a></li>
+              <li><a>Javascript Loops</a></li>
           </ul>
       </footer>
       <section>
@@ -46,24 +48,78 @@
   <p>
     Javscript has many operators which are used to create programs. Common operators are assignment operators, which assign a value to a variable. The following is a table of common assignment operators:
 
-    Name	Operator
-    Assignment	x = y
-    Addition Assignment	x += y
-    Subtraction Assignment	x -= y
-    Multiplication Assignment	x *= y
-    Divions Assignment	x /= y
-    Remainder Assignment	x %= y
+    <table style="width:80%">
+      <tr>
+        <th>Name</th>
+        <th>Operator</th>
+      </tr>
+      <tr>
+        <td>Assignment</td>
+        <td>x = y</td>
+      </tr>
+      <tr>
+        <td>Addition Assignment</td>
+        <td>x += y</td>
+      </tr>
+      <tr>
+        <td>Subtraction Assignment</td>
+        <td>x -= y</td>
+      </tr>
+      <tr>
+        <td>Multiplication Assignment</td>
+        <td>x *= y</td>
+      </tr>
+      <tr>
+        <td>Divisions Assignment</td>
+        <td>x /= y</td>
+      </tr>
+      <tr>
+        <td>Remainder Assignment</td>
+        <td>x %= y</td>
+      </tr>
+    </table>
+    <br>
     In addition to assignment operators there are also comparison operators. These operators compare two values and return a result based on the comparison. The following is a table of common comparison operators:
-    
-    Name	Description
-    Equal (==)	Returns true if operands are equal
-    Not Equal (!=)	Returns true if operands are not equal
-    Strict Equal (===)	Returns true if the value of the operands are equal
-    Strict Not Equal (!==)	Returns true if the value of the operands is not equal
-    Greater Than (>)	Returns true if the if left operand is greater than the right operand
-    Greater Than or equal (>=)	Returns true if the left operand is greater than or equal to the right operand
-    Less Than (>)	Returns true if the if left operand is less than the right operand
-    Less Than or equal (<=>)	Returns true if the left operand is less than or equal to the right operand
+    <br><br>
+    <table style="width:80%">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Equal (==)</td>
+        <td>Returns true if operands are equal</td>
+      </tr>
+      <tr>
+        <td>Not Equal (!=)</td>
+        <td>Returns true if operands are not equal/td>
+      </tr>
+      <tr>
+        <td>Strict Equal (===)</td>
+        <td>Returns true if the value of the operands are equal</td>
+      </tr>
+      <tr>
+        <td>Strict Not Equal (!==)</td>
+        <td>Returns true if the value of the operands is not equal</td>
+      </tr>
+      <tr>
+        <td>Greater Than (>)</td>
+        <td>Returns true if the if left operand is greater than the right operand</td>
+      </tr> 
+      <tr>
+        <td>Greater Than or equal (>=)</td>
+        <td>Returns true if the left operand is greater than or equal to the right operand</td>
+      </tr>
+      <tr>
+        <td>Less Than (>)</td>
+        <td>Returns true if the if left operand is less than the right operand</td>
+      </tr>
+      <tr>
+        <td>Less Than or equal (<=>)</td>
+        <td>Returns true if the left operand is less than or equal to the right operand</td>
+      </tr>
+    </table>
+    <br>
   </p>
 </section>
 <section>
@@ -71,7 +127,12 @@
     <p>
       A function is a basic building block of a Javascript program. An example of a function is as follows:
 
-      function square(number) {return number * number;}
+      <pre>
+        <code>
+          function square(number) {return number * number;}
+        </code>
+      </pre>
+
       
       A function declaration must consist of the function keyword and the following three things:
       
@@ -86,13 +147,17 @@
     </p>
 </section>
 <section>
-  <h2>Loops</h2>
+  <h2>Javascript Loops</h2>
   <p>
     A loop is a way to allow one to run code a certain number of times. A loops looks like the following:
 
-    for (let step = 0; step < 5; step++) {console.log('Walking east one step');}
-    
-    The above code will log Waking east one step to the console five times. The way this works is by setting the initial loop variable step to 0. The code then runs and when it is finished the step variable is incremented by 1, making the the step value 1. This code will continue to run so long as step is less than 5. Once step equals 5 the loop is exited.
+    <pre>
+      <code>
+        for (let step = 0; step < 5; step++) {console.log('Walking east one step');}
+      </code>
+    </pre>
+
+    The above code will log "Waking east one step" to the console five times. The way this works is by setting the initial loop variable step to 0. The code then runs and when it is finished the step variable is incremented by 1, making the the step value 1. This code will continue to run so long as step is less than 5. Once step equals 5 the loop is exited.
   </p>
 </section>
   </body>

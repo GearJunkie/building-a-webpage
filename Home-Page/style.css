@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff; 
+    background-color: #272727; 
     margin: 0px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
@@ -7,36 +7,43 @@ body {
 
 header {
     display: block;
-    background-color: white;
+    background-color: #272727;
     margin-top: 22px;
 }
 
 
+/* Menu, Logo, Header Stars Here */
+
 a {
-    color: white; 
+    color: rgb(255, 255, 255); 
     font-weight: 300; 
     letter-spacing: 2px; 
     text-decoration: none; 
-    background: #0026e4;
-    padding: 5px 5px; 
+    padding: 16px 5px; 
     display: inline-block; 
     width: 100%; 
     text-align: center; 
  }
-        
 
-.navigation li:hover { 
-    background: rgb(0, 0, 0);
-}
+ a:hover { 
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 255, 255);
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    padding: 16px 5px; 
+    display: inline-block; 
+    width: 100%; 
+    text-align: center;
+   } 
 
 
 
-.tab-bar { 
+  .tab-bar { 
     max-width: 1200px; 
     margin: 0 auto;
-    padding: 0px;
-    background-color: rgb(86, 31, 153);
-}
+    padding: 0px;    
+} 
 
     
 
@@ -45,16 +52,24 @@ a {
     list-style: none;   
     display: flex;
     justify-self: center;
-    background-color: #0026e4;
     margin: 0px;
     padding: 0px;
+    max-width: 1200px;
+
 }
+
 
 .navigation li {
     flex: 3;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    background-color: #0026e4;
 }
+
+.navigation li:hover {
+    flex: 3;
+    background-color: #ffffff;
+    color: black;
+}
+
 
 .logobar {
     display: block;
@@ -77,3 +92,19 @@ a {
     margin-inline-start: 150px;
     align-self: left;
 }
+
+#pagenamebox {
+    display: block;
+    margin-inline-start: 155px;
+}
+
+#pagename {
+    font-size: 50px;
+    color: white;
+    align-self: center;
+    padding-top: 20px;
+}
+
+
+
+/* ///Header, Logo, Menu Bar Ends Here///

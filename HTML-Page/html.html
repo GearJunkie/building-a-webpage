@@ -1,54 +1,62 @@
-<h2>What is HTML?</h2>
-            <p>HTML &lpar;Hypertext Markup Language&rpar; is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which can be applied to pieces of text to give them different meaning in a document &lpar;Is it a paragraph? Is it a bulleted list? Is it part of a table?&rpar;, structure a document &lpar;Does it have a header? Three colums of content? A navigation menu?&rpar;, and embed contenct such as images and video into a page. For example, consider the following line of text:</p>
-            <p>My cat is very grumpy</p>
-            <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph &lt;p&gt; element:</p>
-            <p>&lt;p&gt;My cat is very grumpy&lt;p&gt;</p>
-            <h3>Anatomy of an HTML element:</h3>
-            <p>Let's further explore our paragraph element from the previous section:</p>
-            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png">
-            <p>The anatomy of our element is:</p>
-            <ul>
-                <li>The opening tag: This consists of the name of the element, p for paragraph, wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. It precedes the start of the paragraph text.</li>
-                <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
-                <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
-            </ul>
-                </p>The element is the opening tag, followed by content, followed by the closing tag.</p>
-            <h3>Nesting elements:</h3>
-            <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong&lpar;er&rpar; text formatting:
-            <p>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.</p>
-            <p>There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p</p>
-            <h3>Block versus inline elements:</h3>
-            <ul>
-                <li>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
-                <li>Inline elements are contained within block-level elements, and surround only small parts of the document’s content &lpar;not entire paragraphs or groupings of content&rpar;. An inline element will not cause a new line to appear in the document. It is typically used with text, for example an &lt;a&gt; element creates a hyperlink, and elements such as &lt;em&gt; or &lt;strong&gt; create emphasis.</li>
-            </ul>
-            <p>&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;</p>
-            <p>&lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;</p>
-            <p>&lt;em&gt; is an inline element. As you see below, the first three elements sit on the same line, with no space in between . On the other hand, &lt;p&gt; is a block-level element. Each p element appears on a new line, with space above and below.</p>
-            <p><em>firstsecondthird</em></p>
-            <p>fourth</p><p>fifth</p><p>sixth</p>
-            <h3>Empty elements:</h3>
-            <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert or embed something in the document. For example, the &lt;img&gt; element embeds an image file onto a page:</p>
-            <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;
-            <p>This would output the following:</p>
-            <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
-            <h3>Attributes:</h3>
-            <p>Elements can also have attributes. Attributes look like this:</p>
-            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png">
-            <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
-            <p>An attribute should have:</p>
-            <ul>
-                <li>A space between it and the element name. &lpar;For an element with more than one attribute, the attributes should be separated by spaces too.&rpar;</li>
-                <li>The attribute name, followed by an equal sign.</li>
-                <li>An attribute value, wrapped with opening and closing quote marks.</li>
-            </ul>
-            <h3>Adding attributes to an element:</h3>
-            <p>Another example of an element is &lt;a&gt;. This stands for anchor. An anchor can make the text it encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
-            <ul>
-                <li>href: This attribute's value specifies the web address for the link &lpar;href="https://www.google.com/"&rpar;.</li>
-                <li>Title: The title attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, title="The Google Homepage". This appears as the tooltip when a cursor hovers over the element.</li>
-                <li>Target: The target attribute specifies the browsing context used to display the link. For example: target="_blank" will display the link in a new tab. If you want to display the linked content in the current tab, just omit this attribute.</li>
-            </ul>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>What is HTML?</title>
+            <link rel="stylesheet" href="/Home-Page/style.css" type="text/css">
+        </head>
+            <body>
+                <h2>What is HTML?</h2>
+                    <p>HTML &lpar;Hypertext Markup Language&rpar; is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which can be applied to pieces of text to give them different meaning in a document &lpar;Is it a paragraph? Is it a bulleted list? Is it part of a table?&rpar;, structure a document &lpar;Does it have a header? Three colums of content? A navigation menu?&rpar;, and embed contenct such as images and video into a page. For example, consider the following line of text:</p>
+                    <p>My cat is very grumpy</p>
+                    <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph &lt;p&gt; element:</p>
+                    <p>&lt;p&gt;My cat is very grumpy&lt;p&gt;</p>
+                <h3>Anatomy of an HTML element:</h3>
+                    <p>Let's further explore our paragraph element from the previous section:</p>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png">
+                    <p>The anatomy of our element is:</p>
+                    <ul>
+                        <li>The opening tag: This consists of the name of the element, p for paragraph, wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. It precedes the start of the paragraph text.</li>
+                        <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+                        <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+                    </ul>
+                    </p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+                <h3>Nesting elements:</h3>
+                    <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong&lpar;er&rpar; text formatting:
+                    <p>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.</p>
+                    <p>There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p</p>
+                <h3>Block versus inline elements:</h3>
+                    <ul>
+                        <li>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
+                        <li>Inline elements are contained within block-level elements, and surround only small parts of the document’s content &lpar;not entire paragraphs or groupings of content&rpar;. An inline element will not cause a new line to appear in the document. It is typically used with text, for example an &lt;a&gt; element creates a hyperlink, and elements such as &lt;em&gt; or &lt;strong&gt; create emphasis.</li>
+                    </ul>
+                    <p>&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;</p>
+                    <p>&lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;</p>
+                    <p>&lt;em&gt; is an inline element. As you see below, the first three elements sit on the same line, with no space in between . On the other hand, &lt;p&gt; is a block-level element. Each p element appears on a new line, with space above and below.</p>
+                    <p><em>firstsecondthird</em></p>
+                    <p>fourth</p><p>fifth</p><p>sixth</p>
+                <h3>Empty elements:</h3>
+                    <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert or embed something in the document. For example, the &lt;img&gt; element embeds an image file onto a page:</p>
+                    <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;
+                    <p>This would output the following:</p>
+                    <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+                <h3>Attributes:</h3>
+                    <p>Elements can also have attributes. Attributes look like this:</p>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png">
+                    <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
+                    <p>An attribute should have:</p>
+                    <ul>
+                        <li>A space between it and the element name. &lpar;For an element with more than one attribute, the attributes should be separated by spaces too.&rpar;</li>
+                        <li>The attribute name, followed by an equal sign.</li>
+                        <li>An attribute value, wrapped with opening and closing quote marks.</li>
+                    </ul>
+                <h3>Adding attributes to an element:</h3>
+                    <p>Another example of an element is &lt;a&gt;. This stands for anchor. An anchor can make the text it encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
+                    <ul>
+                        <li>href: This attribute's value specifies the web address for the link &lpar;href="https://www.google.com/"&rpar;.</li>
+                        <li>Title: The title attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, title="The Google Homepage". This appears as the tooltip when a cursor hovers over the element.</li>
+                        <li>Target: The target attribute specifies the browsing context used to display the link. For example: target="_blank" will display the link in a new tab. If you want to display the linked content in the current tab, just omit this attribute.</li>
+                    </ul>
             <p>Live output:</p>
             <p>A link to my <a href="https://www.google.com/" title="The Google Homepage" target="_blank">favorite website</a>.</p>
             <p>Editable code:</p>

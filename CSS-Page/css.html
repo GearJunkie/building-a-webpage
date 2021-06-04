@@ -2,7 +2,9 @@
     <html>
         <head>
             <meta charset="utf-8">
-            <title>CodeFellows 201</title>
+            <title>CSS Guide</title>
+            <!--I copied and pasted the "master .css file into my HTML-Page folder to apply the stylesheet that we are wanting to have across each page. Then, I made sure to rename the new .css file to what you see below in the href because I will also be adding a few of my own touches.-->
+
             <link rel="stylesheet" href="/Home-Page/style.css" type="text/css">
             <script src="home.js"></script>
         </head>
@@ -15,20 +17,22 @@
                         </h1>
                     </div>
                     <div>
-                        <img src="/images/Logo.png" id="sitelogo" alt="Site Logo">
+            <!--I had to use ../ in the img src= to access the file outside of my own folder of files, then again to access the img file within another folder.-->
+                    <img src="../images/Logo.png" id="sitelogo" alt="Site Logo">
                     </div>
-                </div>
-                <div class="tab-bar">
-                    <nav class="navigation">
-                        <ul>
-                            <li><a href="/Home-Page/index.html">HOME</a></li>
-                            <li><a href="#">MARKDOWN</a></li>
-                            <li><a href="/HTML-Page/html.html">HTML</a></li>
-                            <li><a href="css.html">CSS</a></li>
-                            <li><a href="/javascript-page/javascript.html">JAVASCRIPT</a></li>
-                        </ul> 
-                    </nav>
-                </div>
+                    </div>
+                    <div class="tab-bar">
+                        <nav class="navigation">
+                            <ul>
+            <!--I placed an ./ in front of the index.html file since my page is not the "home page" and had to href a file one step outside of my own file's pathway. GitHub and some other version control systems that allow webpage construction can be very particular in how they recognize the files.-->
+                                <li><a href="./index.html">HOME</a></li>
+                                <li><a href="#">MARKDOWN</a></li>
+                                <li><a href="./HTML-Page/html.html">HTML</a></li>
+                                <li><a href="./CSS-Page/css.html">CSS</a></li>
+                                <li><a href="./javascript-page/javascript.html">JAVASCRIPT</a></li>
+                            </ul> 
+                        </nav>
+                    </div>
             </header>
         <section>
             <h2>Styling HTML with CSS</h2>

@@ -4,19 +4,18 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
 
+
 header {
     display: block;
     background-color: #272727;
     margin-top: 22px;
 }
 
+
 p {
     color: white;
 }
 
-li {
-    color: white;
-}
 
 h2 {
     color: #1f45ff;
@@ -29,7 +28,7 @@ h3 {
     color: #1f45ff;
     font-size: 30px;
     text-justify: center;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -58,11 +57,15 @@ a {
     text-align: center;
    } 
 
+
+
   .tab-bar { 
     max-width: 1200px; 
     margin: 0 auto;
     padding: 0px;    
 } 
+
+    
 
 .navigation ul { 
     border: 1px solid, #0026e4; 
@@ -75,6 +78,7 @@ a {
 
 }
 
+
 .navigation li {
     flex: 3;
     background-color: #0026e4;
@@ -85,6 +89,7 @@ a {
     background-color: #ffffff;
     color: black;
 }
+
 
 .logobar {
     display: block;
